@@ -2,6 +2,11 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+    var submitbutton=document.getElementById("submitbutton");
+
+    submitbutton.addEventListener('click', () => {
+        alert("Thank you for your feedback!");
+    } );
     
     burger.addEventListener('click' , () => {
         //Toggle Nav
@@ -23,3 +28,4 @@ const navSlide = () => {
 }
 
 navSlide();
+
